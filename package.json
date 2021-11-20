@@ -1,0 +1,23 @@
+{
+  "name": "social-app",
+  "version": "1.0.0",
+  "description": "Social Application with GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index"
+  },
+  "author": "Mehade Hasan",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.5.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.7.2",
+    "graphql-subscriptions": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
