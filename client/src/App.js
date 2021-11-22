@@ -4,13 +4,15 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MenuBar from "./components/MenuBar";
+import { AuthProvider } from "./context/auth";
 
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <AuthProvider>
+      <Router>
       <Container>
         <MenuBar />
         <Route exact path="/" component={Home} />
@@ -18,6 +20,7 @@ function App() {
         <Route exact path="/register" component={Register} />
       </Container>
     </Router>
+    </AuthProvider>
   );
 }
 
